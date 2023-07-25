@@ -1,0 +1,50 @@
+#portal {
+  position: fixed;
+  top: 0;
+}
+
+html {
+  /* set base font size to 13px */
+  font-size: 50.782% !important;
+}
+
+body {
+  color: var(--mu-colors-foreground-text-neutral-plain) !important;
+  overscroll-behavior-y: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.animate-copy {
+  animation: pulse 0.2s;
+  transition: all 0.2s;
+}
+
+.remove-icon-background svg {
+  background: none !important;
+}
+
+[id*="ScrollableDialog"] .infinite-scroll-component {
+  overflow: hidden !important;
+}
